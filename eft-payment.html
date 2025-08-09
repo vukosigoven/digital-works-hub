@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Payment — Digital Works Hub SA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment - Digital Works Hub SA</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/include.js" defer></script>
-  <script src="js/menu.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="header-placeholder"></div>
-  <main class="site-main container">
-    <h1>Payment (EFT)</h1>
-    <p>Bank: FNB (example)</p>
-    <p>Account name: Digital Works Hub SA</p>
-    <p>Account number: 123456789</p>
-    <p>Branch code: 250655</p>
-    <p>Reference: YourName_Service</p>
-  </main>
-  <div id="footer-placeholder"></div>
+<header>
+  <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
+  <span class="brand-text">Digital Works Hub SA</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="eft-payment.html">Payment</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<div class="container">
+  <h1>Payment (EFT)</h1>
+  <p>Bank: FNB (example)</p>
+  <p>Account name: Digital Works Hub SA</p>
+  <p>Account number: 123456789</p>
+  <p>Branch code: 250655</p>
+  <p>Reference: YourName_Service</p>
+</div>
+<footer>
+  <p>Chavani Village near Elim Hospital, Louis Trichardt • Email: <a href="mailto:vukosigoven@gmail.com" style="color:white;">vukosigoven@gmail.com</a> • WhatsApp: <a href="https://wa.me/2763648558" style="color:white;">076 364 8558</a></p>
+  <p>&copy; <span id="year"></span> Digital Works Hub SA</p>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</footer>
 </body>
 </html>
