@@ -1,56 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Works Hub SA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EFT Payment – Digital Works Hub SA</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #ff6600;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .bank-details {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .bank-details p {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+    .upload-form {
+      margin-top: 30px;
+    }
+    input[type="file"], input[type="text"], input[type="submit"] {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo.png" alt="Digital Works Hub SA Logo" style="height:80px; width:auto;">
+  <div class="header">
     <h1>Digital Works Hub SA</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="services.html">Services</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <p>Empowering Your Career Through Digital Services</p>
+  </div>
 
-  <section class="hero">
-    <h2>Empowering Careers Through Digital Skills</h2>
-    <p>CV Writing • Web Design • Digital Training</p>
-    <p><a href="services.html">Explore Our Services</a></p>
-  </section>
+  <div class="container">
+    <h2>Secure EFT Payment</h2>
+    <p>Use the banking details below to make your payment. After payment, upload your proof below or contact us via WhatsApp.</p>
 
-  <section id="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Professional CV & Motivation Letter Writing</li>
-      <li>Affordable Web Design for Individuals & Small Businesses</li>
-      <li>Digital Literacy & Skills Training</li>
-    </ul>
-  </section>
+    <div class="bank-details">
+      <p>Bank: Capitec</p>
+      <p>Account Name: Digital Works Hub SA</p>
+      <p>Account Number: 1234567890</p>
+      <p>Branch Code: 470010</p>
+      <p>Reference: Your Name + Service</p>
+    </div>
 
-  <section id="about">
-    <h3>About Us</h3>
-    <p>Founded by Vukosi Goven Baloyi, Digital Works Hub SA is committed to helping South Africans thrive in the digital economy. We offer practical, affordable, and empowering services tailored to your career and business goals.</p>
-  </section>
+    <div class="upload-form">
+      <form name="proof-upload" method="POST" data-netlify="true" enctype="multipart/form-data">
+        <input type="text" name="client-name" placeholder="Your Full Name" required>
+        <input type="file" name="proof" accept=".jpg,.jpeg,.png,.pdf" required>
+        <input type="submit" value="Submit Proof of Payment">
+      </form>
+    </div>
 
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <div style="text-align:center;">
+      <a class="whatsapp-button" href="https://wa.me/27712345678?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20just%20made%20an%20EFT%20payment%20and%20need%20support.">
+        Contact via WhatsApp
+      </a>
+    </div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Digital Works Hub SA. All rights reserved.</p>
-  </footer>
+  <div class="footer">
+    &copy; 2025 Digital Works Hub SA. All rights reserved.
+  </div>
 
 </body>
 </html>
