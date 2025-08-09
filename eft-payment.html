@@ -7,12 +7,33 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      padding: 40px;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .container {
-      max-width: 600px;
-      margin: auto;
+      max-width: 700px;
+      margin: 40px auto;
       background-color: #fff;
       padding: 30px;
       border-radius: 8px;
@@ -20,7 +41,7 @@
     }
     h2 {
       color: #333;
-      margin-bottom: 20px;
+      text-align: center;
     }
     p {
       font-size: 16px;
@@ -31,28 +52,100 @@
       background-color: #f0f0f0;
       padding: 20px;
       border-radius: 6px;
-      margin-top: 20px;
+      margin: 20px 0;
     }
     .bank-details p {
       margin: 8px 0;
       font-weight: bold;
     }
+    .upload-form {
+      margin-top: 30px;
+    }
+    input[type="file"], input[type="text"], input[type="submit"] {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #999;
+      background-color: #fff;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Digital Works Hub SA</h1>
+    <p>Empowering Your Career Through Digital Services</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="eft-payment.html">Payment</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <div class="container">
-    <h2>EFT Payment Instructions</h2>
-    <p>Please use the banking details below to make a secure EFT payment for your selected service. Once payment is made, kindly send proof of payment to <strong>digitalworkshubsa@gmail.com</strong>.</p>
+    <h2>Secure EFT Payment</h2>
+    <p>Use the banking details below to make your payment. After payment, upload your proof or contact us via WhatsApp.</p>
 
     <div class="bank-details">
       <p>Bank: Capitec</p>
       <p>Account Name: Digital Works Hub SA</p>
-      <p>Account Number: 1483116830</p>
+      <p>Account Number: 1234567890</p>
       <p>Branch Code: 470010</p>
       <p>Reference: Your Name + Service</p>
     </div>
 
-    <p>Once we receive your payment, we’ll begin processing your request immediately. Thank you for choosing Digital Works Hub SA!</p>
+    <div class="upload-form">
+      <form name="proof-upload" method="POST" data-netlify="true" enctype="multipart/form-data">
+        <input type="text" name="client-name" placeholder="Your Full Name" required>
+        <input type="file" name="proof" accept=".jpg,.jpeg,.png,.pdf" required>
+        <input type="submit" value="Submit Proof of Payment">
+      </form>
+    </div>
+
+    <div style="text-align:center;">
+      <a class="whatsapp-button" href="https://wa.me/27712345678?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20just%20made%20an%20EFT%20payment%20and%20need%20support.">
+        Contact via WhatsApp
+      </a>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Digital Works Hub SA. All rights reserved.
+  </footer>
+
 </body>
 </html>
