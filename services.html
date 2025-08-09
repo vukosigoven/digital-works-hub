@@ -4,70 +4,52 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services — Digital Works Hub SA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/include.js" defer></script>
+  <script src="js/menu.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
-        <span class="brand-text">Digital Works Hub SA</span>
-      </a>
+  <div id="header-placeholder"></div>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="eft-payment.html">Payment</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <main class="site-main container">
+    <header class="page-head">
+      <h1>Services</h1>
+      <p class="lead">A concise overview of the services we offer.</p>
+    </header>
 
-  <main class="container">
-    <h1>Services</h1>
-
-    <section id="cv">
+    <section class="service-detail">
       <h2>CV & Motivation Letters</h2>
-      <p>We produce clear, modern CVs and motivation letters targeted for job applications, bursaries and internships. We format, proofread and tailor each document to the vacancy.</p>
+      <p>We craft modern, clear CVs and persuasive motivation letters that pass applicant tracking systems and impress hiring managers.</p>
       <ul>
-        <li>Custom layout and ATS-friendly formatting</li>
-        <li>Cover letters / motivation letters</li>
-        <li>Revision included</li>
+        <li>Keyword optimisation</li>
+        <li>Two formats (Word + PDF)</li>
+        <li>One free revision</li>
       </ul>
     </section>
 
-    <section id="web">
+    <section class="service-detail">
       <h2>Web Design & Hosting</h2>
-      <p>Small-business and community websites that look modern and work on phones.</p>
+      <p>Cost-effective, responsive websites with optional CMS (WordPress) training and inexpensive hosting for small businesses and community projects.</p>
       <ul>
-        <li>Responsive templates or fully custom sites</li>
-        <li>Free hosting options for qualifying community projects</li>
-        <li>Basic CMS training included</li>
+        <li>Responsive templates</li>
+        <li>Optional maintenance packages</li>
+        <li>Free hosting for qualifying community initiatives</li>
       </ul>
     </section>
 
-    <section id="training">
+    <section class="service-detail">
       <h2>Digital Skills Training</h2>
-      <p>Practical group or one-on-one training on:</p>
+      <p>Hands-on training that focuses on producing real outcomes (fliers, portfolios, WordPress sites).</p>
       <ul>
-        <li>Canva, WordPress, Google Workspace</li>
-        <li>Basic design and file export for print/digital</li>
-        <li>CV-writing & job search coaching</li>
+        <li>Group or one-on-one sessions</li>
+        <li>Practical takeaways and templates</li>
+        <li>Certificates on request</li>
       </ul>
     </section>
 
-    <section class="ask">
-      <p>Want a custom package? <a href="contact.html">Contact us</a> or <a href="eft-payment.html">pay by EFT</a> to confirm a booking.</p>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Contact: <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a> • WhatsApp: <a href="https://wa.me/2763648558">076 364 8558</a></p>
-      <p>&copy; <span id="year2"></span> Digital Works Hub SA</p>
-    </div>
-  </footer>
-
-  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

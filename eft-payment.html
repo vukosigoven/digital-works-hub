@@ -4,48 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Payment — Digital Works Hub SA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/include.js" defer></script>
+  <script src="js/menu.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
-        <span class="brand-text">Digital Works Hub SA</span>
-      </a>
+  <div id="header-placeholder"></div>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="eft-payment.html" class="active">Payment</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
+  <main class="site-main container">
     <h1>Payment (EFT)</h1>
-    <section>
-      <p>Please use the following bank details for EFT payments. Once payment is made, email proof of payment to <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a> or WhatsApp <a href="https://wa.me/2763648558">076 364 8558</a>.</p>
+    <p class="lead">Use the details below for EFT payments. After payment, please WhatsApp or email proof of payment.</p>
 
-      <ul>
-        <li><strong>Bank:</strong> [Your bank name]</li>
-        <li><strong>Account name:</strong> Digital Works Hub SA</li>
-        <li><strong>Account number:</strong> 123456789</li>
-        <li><strong>Branch code:</strong> 000000</li>
-        <li><strong>Reference:</strong> YourName_Service</li>
-      </ul>
+    <section class="payment-card">
+      <table class="payment-table" role="table">
+        <tbody>
+          <tr><th>Bank</th><td>FNB (example)</td></tr>
+          <tr><th>Account name</th><td>Digital Works Hub SA</td></tr>
+          <tr><th>Account number</th><td>123456789</td></tr>
+          <tr><th>Branch code</th><td>250655</td></tr>
+          <tr><th>Reference</th><td>YourName_Service</td></tr>
+        </tbody>
+      </table>
 
-      <p>Replace placeholder bank details above with your actual bank details.</p>
+      <p class="muted small">Replace placeholder details with your real bank information before publishing.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year4"></span> Digital Works Hub SA</p>
-    </div>
-  </footer>
-
-  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

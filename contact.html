@@ -4,64 +4,55 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Digital Works Hub SA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/include.js" defer></script>
+  <script src="js/menu.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
-        <span class="brand-text">Digital Works Hub SA</span>
-      </a>
+  <div id="header-placeholder"></div>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="eft-payment.html">Payment</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <main class="site-main container">
+    <h1>Contact</h1>
+    <p class="lead">We’re happy to help — message us on WhatsApp or send an email.</p>
 
-  <main class="container">
-    <h1>Contact Us</h1>
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h3>Contact details</h3>
+        <p>Chavani Village near Elim Hospital, Louis Trichardt</p>
+        <p>Email: <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/2763648558">076 364 8558</a></p>
+      </div>
 
-    <section class="contact-details">
-      <p>We’re based in Chavani Village near Elim Hospital, Louis Trichardt.</p>
-      <p>Email: <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/2763648558" target="_blank" rel="noopener">076 364 8558</a></p>
-    </section>
+      <div class="contact-card">
+        <h3>Send a message</h3>
+        <form action="mailto:vukosigoven@gmail.com" method="post" enctype="text/plain" class="contact-form" novalidate>
+          <label for="fullname">Full name</label>
+          <input id="fullname" name="fullname" type="text" required />
 
-    <section class="contact-form">
-      <h2>Send us a message</h2>
-      <!--
-        Note: mailto form submissions rely on the user's email client.
-        For production, replace with server endpoint or form handling service.
-      -->
-      <form action="mailto:vukosigoven@gmail.com" method="post" enctype="text/plain" novalidate>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
+          <label for="service">Service required</label>
+          <select id="service" name="service">
+            <option>CV & Motivation</option>
+            <option>Web Design</option>
+            <option>Training</option>
+            <option>Other</option>
+          </select>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Send</button>
-          <a class="btn btn-ghost" href="https://wa.me/2763648558?text=Hi%20I%20want%20to%20contact%20you" target="_blank" rel="noopener">Message on WhatsApp</a>
-        </div>
-      </form>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send via email</button>
+            <a class="btn btn-outline" href="https://wa.me/2763648558?text=Hi%20I%20need%20help" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year3"></span> Digital Works Hub SA</p>
-    </div>
-  </footer>
-
-  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
