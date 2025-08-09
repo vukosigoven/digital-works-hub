@@ -46,20 +46,6 @@
       max-width: 700px;
       margin: 20px auto;
     }
-    .payment-button {
-      display: inline-block;
-      background-color: #ff6600;
-      color: white;
-      padding: 14px 28px;
-      font-size: 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .payment-button:hover {
-      background-color: #e65c00;
-    }
     .services {
       display: flex;
       flex-wrap: wrap;
@@ -90,16 +76,25 @@
     }
     .cta a {
       display: inline-block;
-      background-color: #25D366;
-      color: white;
       padding: 12px 20px;
       border-radius: 4px;
       text-decoration: none;
       font-size: 16px;
       margin: 10px;
     }
-    .cta a:hover {
+    .cta .whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+    .cta .whatsapp:hover {
       background-color: #1ebe5d;
+    }
+    .cta .payment {
+      background-color: #ff6600;
+      color: white;
+    }
+    .cta .payment:hover {
+      background-color: #e65c00;
     }
     footer {
       text-align: center;
@@ -126,7 +121,6 @@
   <section class="hero">
     <h1>Welcome to Digital Works Hub SA</h1>
     <p>We help individuals and businesses thrive through expert CV writing, web design, and digital skills training. Whether you're starting your career or scaling your brand, we’re here to support your journey.</p>
-    <a href="eft-payment.html" class="payment-button">Make a Payment</a>
   </section>
 
   <section class="services">
@@ -145,7 +139,8 @@
   </section>
 
   <section class="cta">
-    <a href="https://wa.me/27712345678?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20need%20help%20with%20your%20services.">Chat on WhatsApp</a>
+    <a href="eft-payment.html" class="payment">Make a Payment</a>
+    <a href="https://wa.me/27712345678?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20need%20help%20with%20your%20services." class="whatsapp">Chat on WhatsApp</a>
   </section>
 
   <footer>
