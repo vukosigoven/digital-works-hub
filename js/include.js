@@ -1,1 +1,0 @@
-function loadHTML(sel,file){fetch(file).then(r=>r.text()).then(d=>{document.querySelector(sel).innerHTML=d;});}document.addEventListener('DOMContentLoaded',()=>{loadHTML('#header-placeholder','partials/header.html');loadHTML('#footer-placeholder','partials/footer.html');});

@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{setTimeout(()=>{let t=document.getElementById('menuToggle'),n=document.getElementById('mainNav');if(t&&n){t.addEventListener('click',()=>{n.classList.toggle('open');});}},300);});
