@@ -1,6 +1,1 @@
 body{font-family:Inter,sans-serif;margin:0;background:#f7f8fb;}header,footer{background:#fff;padding:10px;}nav a{margin:0 5px;text-decoration:none;}
-.logo {
-  height: 50px; /* controls vertical size */
-  width: auto;  /* keeps aspect ratio */
-  display: block;
-}
