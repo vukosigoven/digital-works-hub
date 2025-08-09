@@ -1,151 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Works Hub SA – Home</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-    header {
-      background-color: #ff6600;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 16px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: #fff;
-    }
-    .hero h1 {
-      font-size: 32px;
-      color: #333;
-    }
-    .hero p {
-      font-size: 18px;
-      color: #666;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      background-color: #f0f0f0;
-    }
-    .service-box {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      margin: 15px;
-      padding: 20px;
-      width: 280px;
-      text-align: center;
-    }
-    .service-box h3 {
-      color: #ff6600;
-      margin-bottom: 10px;
-    }
-    .service-box p {
-      color: #555;
-      font-size: 15px;
-    }
-    .cta {
-      text-align: center;
-      padding: 30px 20px;
-    }
-    .cta a {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 10px;
-    }
-    .cta .whatsapp {
-      background-color: #25D366;
-      color: white;
-    }
-    .cta .whatsapp:hover {
-      background-color: #1ebe5d;
-    }
-    .cta .payment {
-      background-color: #ff6600;
-      color: white;
-    }
-    .cta .payment:hover {
-      background-color: #e65c00;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #999;
-      background-color: #fff;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Works Hub SA — Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
+        <span class="brand-text">Digital Works Hub SA</span>
+      </a>
 
-  <header>
-    <h1>Digital Works Hub SA</h1>
-    <p>Empowering Your Career Through Digital Services</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="eft-payment.html">Payment</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="eft-payment.html">Payment</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Empower your career with modern digital services</h1>
+          <p class="lead">CV writing, web design, and practical digital skills training for individuals, students and community projects — delivered with care from Louis Trichardt.</p>
+          <p class="hero-ctas">
+            <a href="contact.html" class="btn btn-primary">Get started</a>
+            <a href="https://wa.me/2763648558?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20need%20help" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </p>
+        </div>
 
-  <section class="hero">
-    <h1>Welcome to Digital Works Hub SA</h1>
-    <p>We help individuals and businesses thrive through expert CV writing, web design, and digital skills training. Whether you're starting your career or scaling your brand, we’re here to support your journey.</p>
-  </section>
+        <div class="hero-art">
+          <div class="card-glow">
+            <h3>Popular</h3>
+            <p><strong>CV & Motivation Letters</strong><br/>Tailored for jobs, bursaries and internships.</p>
+            <hr/>
+            <h4>From R250</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="services">
-    <div class="service-box">
-      <h3>CV & Motivation Letters</h3>
-      <p>Professional documents tailored to your goals. Stand out in job applications and bursary submissions.</p>
+    <section class="container services-grid" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our core services</h2>
+
+      <div class="grid">
+        <article class="service">
+          <h3>CV & Motivation Letters</h3>
+          <p>Create professional CVs and motivation letters targeted to the job or bursary you want.</p>
+          <a href="contact.html" class="link-small">Request a quote →</a>
+        </article>
+
+        <article class="service">
+          <h3>Web Design & Hosting</h3>
+          <p>Responsive, low-cost websites with optional free hosting for community projects.</p>
+          <a href="services.html" class="link-small">See web work →</a>
+        </article>
+
+        <article class="service">
+          <h3>Digital Skills Training</h3>
+          <p>Practical sessions on Canva, WordPress, Google Workspace and basic digital literacy.</p>
+          <a href="services.html#training" class="link-small">Training details →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container testimonial-section">
+      <blockquote>
+        “Professional, patient and practical — I landed the job I wanted.”<cite> — Thandi M.</cite>
+      </blockquote>
+    </section>
+
+    <section class="container small-cta">
+      <h3>Ready to move forward?</h3>
+      <p>Contact us or use EFT for payment. We’ll email confirmation and next steps.</p>
+      <p>
+        <a href="eft-payment.html" class="btn btn-primary">Make a Payment</a>
+        <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Chavani Village near Elim Hospital, Louis Trichardt • Email: <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a> • WhatsApp: <a href="https://wa.me/2763648558">076 364 8558</a></p>
+      <p>&copy; <span id="year"></span> Digital Works Hub SA — All rights reserved.</p>
     </div>
-    <div class="service-box">
-      <h3>Web Design</h3>
-      <p>Affordable, responsive websites for individuals, startups, and community projects. Hosted for free.</p>
-    </div>
-    <div class="service-box">
-      <h3>Digital Skills Training</h3>
-      <p>Learn essential tools like Canva, WordPress, and Google Workspace. Empower yourself and others.</p>
-    </div>
-  </section>
-
-  <section class="cta">
-    <a href="eft-payment.html" class="payment">Make a Payment</a>
-    <a href="https://wa.me/27712345678?text=Hi%20Digital%20Works%20Hub%20SA,%20I%20need%20help%20with%20your%20services." class="whatsapp">Chat on WhatsApp</a>
-  </section>
-
-  <footer>
-    &copy; 2025 Digital Works Hub SA. All rights reserved.
   </footer>
 
+  <script>
+    // small improvement: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

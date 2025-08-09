@@ -1,123 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EFT Payment – Digital Works Hub SA</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #ff6600;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 16px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #333;
-      text-align: center;
-    }
-    p {
-      font-size: 16px;
-      color: #555;
-      line-height: 1.6;
-    }
-    .bank-details {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 6px;
-      margin: 20px 0;
-    }
-    .bank-details p {
-      margin: 8px 0;
-      font-weight: bold;
-    }
-    .upload-form {
-      margin-top: 30px;
-    }
-    input[type="file"], input[type="text"], input[type="submit"] {
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 16px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    input[type="submit"] {
-      background-color: #ff6600;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #e65c00;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 16px;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #999;
-      background-color: #fff;
-      padding: 20px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment — Digital Works Hub SA</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
+        <span class="brand-text">Digital Works Hub SA</span>
+      </a>
 
-  <header>
-    <h1>Digital Works Hub SA</h1>
-    <p>Empowering Your Career Through Digital Services</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="eft-payment.html" class="active">Payment</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="eft-payment.html">Payment</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <main class="container">
+    <h1>Payment (EFT)</h1>
+    <section>
+      <p>Please use the following bank details for EFT payments. Once payment is made, email proof of payment to <a href="mailto:vukosigoven@gmail.com">vukosigoven@gmail.com</a> or WhatsApp <a href="https://wa.me/2763648558">076 364 8558</a>.</p>
 
-  <div class="container">
-    <h2>Secure EFT Payment</h2>
-    <p>Use the banking details below to make your payment. After payment, upload your proof or contact us via WhatsApp.</p>
+      <ul>
+        <li><strong>Bank:</strong> [Your bank name]</li>
+        <li><strong>Account name:</strong> Digital Works Hub SA</li>
+        <li><strong>Account number:</strong> 123456789</li>
+        <li><strong>Branch code:</strong> 000000</li>
+        <li><strong>Reference:</strong> YourName_Service</li>
+      </ul>
 
-    <div
+      <p>Replace placeholder bank details above with your actual bank details.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year4"></span> Digital Works Hub SA</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
