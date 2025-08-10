@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="../styles.css">
-  <title>Web Design – Digital Works Hub SA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design & Hosting | Digital Works Hub SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <img src="../logo.png" alt="Digital Works Hub SA Logo" class="logo">
+    <img src="logo.png" alt="Digital Works Hub SA logo" class="logo" />
     <span class="brand-text">Digital Works Hub SA</span>
     <nav>
-      <a href="../index.html">Home</a>
-      <a href="./">Services</a>
-      <a href="../eft-payment.html">Payment</a>
-      <a href="../contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv-writing.html">CV Writing</a></li>
+        <li><a href="web-design.html">Web Design</a></li>
+        <li><a href="digital-skills.html">Digital Skills</a></li>
+        <li><a href="electronics-repair.html">Electronics Repair</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Web Design Service</h1>
-    <section class="service-details">
-      <h2>Our Approach</h2>
-      <p>We build responsive, SEO-friendly websites that reflect your brand.</p>
-
-      <h2>Pricing</h2>
-      <table>
-        <thead>
-          <tr><th>Package</th><th>Price (ZAR)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Starter (1–3 pages)</td><td>R3,000</td></tr>
-          <tr><td>Business (up to 5 pages + blog)</td><td>R6,000</td></tr>
-          <tr><td>Advanced (e-commerce)</td><td>R12,000</td></tr>
-        </tbody>
-      </table>
-
-      <a class="btn btn-primary" href="../eft-payment.html">Proceed to Payment</a>
-    </section>
+    <h1>Web Design & Hosting</h1>
+    <p>We create professional, mobile-friendly websites that look great on any device. Whether you’re a small business, freelancer, or organisation, we’ll design a site that reflects your brand and helps you grow.</p>
+    <table>
+      <thead>
+        <tr><th>Package</th><th>Features</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Starter Website</td><td>3-page responsive site, basic contact form, 1-month support</td><td>R800</td></tr>
+        <tr><td>Business Website</td><td>6-page responsive site, SEO setup, 3-month support</td><td>R1,500</td></tr>
+        <tr><td>E-commerce Website</td><td>10+ pages, online store, payment gateway, 6-month support</td><td>R3,500</td></tr>
+      </tbody>
+    </table>
+    <button onclick="window.location.href='contact.html'">Book Now</button>
   </main>
-
-  <footer>
-    <!-- existing footer content -->
-  </footer>
 </body>
 </html>
