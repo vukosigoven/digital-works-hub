@@ -77,13 +77,14 @@ footer{
   padding:15px;
   margin-top:20px;
 }
-/* Push every “Proceed to Payment” button down on service pages */
+
+/* Custom spacing for service pages */
 .service-details .btn-primary {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* Give all pages extra bottom padding so the footer never overlaps */
+/* Ensure footer never overlaps content */
 .container {
   padding-bottom: 3rem;
 }
