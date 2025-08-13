@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services – Digital Works Hub SA</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore our services: professional CV writing, custom web design, electronics repair, and hands-on digital skills training." />
+  <meta name="keywords" content="CV writing, web design, electronics repair, digital skills, Limpopo, South Africa, Digital Works Hub SA" />
+  <meta name="author" content="Vukosi Goven Baloyi" />
+  <meta name="robots" content="index, follow" />
+</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services – Digital Works Hub SA</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore our services: professional CV writing, custom web design, electronics repair, and hands-on digital skills training." />
+  <meta name="keywords" content="CV writing, web design, electronics repair, digital skills, Limpopo, South Africa, Digital Works Hub SA" />
+  <meta name="author" content="Vukosi Goven Baloyi" />
+  <meta name="robots" content="index, follow" />
+</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Digital Works Hub SA | Home</title>
+<meta name="description" content="Professional CV writing, web design, digital skills training, and electronics repair to empower your career and business.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #0b69ff;
+    --accent: #ff6600;
+    --bg: #f7f8fb;
+    --text: #222;
+    --muted: #555;
+    --white: #fff;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 16px;
+  }
+  /* Header */
+  header {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  .brand img {
+    height: 44px;
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+  }
+  nav a {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  nav a.active {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  /* Hero */
+  .hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(120deg, rgba(11, 105, 255, 0.85), rgba(255, 102, 0, 0.75)),
+      url('assets/images/home-hero.jpg') center/cover no-repeat;
+    z-index: -1;
+  }
+  .hero-content {
+    position: relative;
+    padding: 80px 20px;
+  }
+  .badge {
+    display: inline-block;
+    background: #eef4ff;
+    color: #0b234f;
+    border: 1px solid #d7e3ff;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+    margin: 10px 0;
+  }
+  .hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin: 10px 6px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btn-primary {
+    background: var(--white);
+    color: #0b234f;
+  }
+  .btn-primary:hover {
+    background: #e6e6e6;
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  .btn-outline:hover {
+    background: var(--white);
+    color: #0b234f;
+  }
+  /* Sections */
+  section {
+    padding: 50px 0;
+  }
+  h2 {
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .sub {
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  .card h3 {
+    margin: 0 0 6px 0;
+  }
+  ul {
+    list-style: disc inside;
+    color: var(--text);
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  /* Footer */
+  footer {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: #fff;
+  }
+  .footer-inner {
+    text-align: center;
+    padding: 20px;
+  }
+  .footer-links a {
+    color: #fff;
+    font-weight: 700;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .footer-meta {
+    opacity: 0.95;
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.png" alt="Digital Works Hub SA logo" />
+      <span>Digital Works Hub SA</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="about/about.html">About</a>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content container">
+    <span class="badge">Limpopo • South Gauteng & Africa</span>
+    <h1>Empowering careers and businesses in a digital world</h1>
+    <p>From ATS‑ready CVs to responsive websites, practical training, and reliable device repairs — we help you move forward with confidence.</p>
+    <a class="btn btn-outline" href="services/index.html">Get Started</a>
+    <a class="btn btn-outline" href="about.html">Learn about us</a>
+  </div>
+</section>
+
+<main>
+  <section>
+    <div class="container">
+      <h2>Our services</h2>
+      <p class="sub">Clear, quality work — delivered with care and accountability.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>CV Writing</h3>
+          <p>Professional, ATS‑friendly CVs that highlight your strengths.</p>
+          <a class="btn btn-primary" href="services/cv-writing.html">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Responsive, user‑focused websites designed for growth.</p>
+          <a class="btn btn-primary" href="services/web-design.html">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Digital Skills</h3>
+          <p>Hands‑on training to navigate the digital workplace.</p>
+          <a class="btn btn-primary" href="services/digital-skills.html">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Electronics Repair</h3>
+          <p>Reliable repairs for phones, laptops, and accessories.</p>
+          <a class="btn btn-primary" href="services/electronics-repair.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Why choose us</h2>
+      <ul>
+        <li>Clear communication and transparent processes</li>
+        <li>Scalable, maintainable deliverables</li>
+        <li>Local insight with national reach</li>
+        <li>Practical training and ongoing support</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner container">
+    <div class="footer-links">
+      <a href="index.html">Home</a> ·
+     <a href="about/about.html">About</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="services/index.html">Services</a>
+    </div>
+    <div class="footer-meta">&copy; 2025 Digital Works Hub SA. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
