@@ -212,3 +212,45 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .hero-content {
+    padding: 50px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Stack hero buttons vertically */
+  .hero .btn {
+    display: block;
+    margin: 8px auto;
+    width: 80%;
+  }
+
+  /* Reduce section padding */
+  section {
+    padding: 30px 0;
+  }
+
+  /* Grid cards: single column on phones */
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
